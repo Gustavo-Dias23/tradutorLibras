@@ -10,7 +10,7 @@ hands = mp_hands.Hands(static_image_mode=False,
 mp_draw = mp.solutions.drawing_utils
 
 # Nome do arquivo de saída
-arquivo_csv = 'dados/dados_letra_L.csv'
+arquivo_csv = 'dados/dados_letra_Z.csv'
 
 # Abre a webcam
 cap = cv2.VideoCapture(0)
@@ -40,7 +40,7 @@ with open(arquivo_csv, mode='w', newline='') as f:
                     dados = []
                     for ponto in hand_landmarks.landmark:
                         dados.extend([ponto.x, ponto.y])
-                    dados.append('L')  # rótulo da letra
+                    dados.append('Z')  # rótulo da letra
                     escritor_csv.writerow(dados)
                     contador += 1
                     time.sleep(0.1)  # pequeno delay entre coletas
