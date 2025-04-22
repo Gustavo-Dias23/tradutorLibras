@@ -13,7 +13,6 @@ Este projeto utiliza **Python**, **OpenCV**, **MediaPipe** e **scikit-learn** pa
 ├── treino_modelo.py         # Treina o modelo de machine learning
 ├── reconhecimento_tempo_real.py # Executa o reconhecimento em tempo real com webcam
 ├── modelo_libras.pkl        # Arquivo gerado com o modelo treinado
-├── label_encoder.pkl        # Arquivo com os rótulos codificados
 └── README.md                # Documentação do projeto
 ```
 
@@ -86,7 +85,7 @@ Para treinar o classificador com KNN:
 python treino_modelo.py
 ```
 
-Esse processo gerará os arquivos `modelo_libras.pkl` e `label_encoder.pkl`.
+Esse processo gerará o arquivo `modelo_libras.pkl`.
 
 ### 4. Reconhecimento em Tempo Real
 
